@@ -1,0 +1,28 @@
+---
+title: "Xanadu"
+page-layout: custom
+---
+
+::: {.xanadu-page}
+
+::: {.xanadu-title-wrapper}
+```{=html}
+<h1 class="xanadu-animated-title">
+  <span class="word"><span class="drop-cap" style="animation-delay: 0s;">C</span>lassic</span>
+  <span class="word"><span class="drop-cap" style="animation-delay: 0s;">P</span>oetic</span>
+  <span class="word"><span class="drop-cap" style="animation-delay: 0s;">X</span>anadu</span>
+</h1>
+```
+
+::: {.xanadu-subtitle}
+诗句藏山海，笔下有桃源
+:::
+:::
+
+::: {.placeholder-section}
+
+页面内容即将呈现...
+
+:::
+
+:::

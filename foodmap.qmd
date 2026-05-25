@@ -1,0 +1,11 @@
+---
+title: "Foodmap"
+---
+
+::: {.placeholder-section}
+
+# Foodmap
+
+Coming soon...
+
+:::

@@ -1,0 +1,447 @@
+/*-- scss:defaults --*/
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+// Base theme colors - warm palette
+$primary: #c9a87c;
+$secondary: #e8c4c4;
+$navbar-bg: #f7f4ef;
+$navbar-fg: #4a4a4a;
+$body-bg: #f7f4ef;
+$body-color: #4a4a4a;
+$link-color: #c9a87c;
+$link-hover-color: #a68b5b;
+
+$font-family-base: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+$headings-font-family: 'Playfair Display', Georgia, serif;
+
+/*-- scss:rules --*/
+
+// ============================================
+// WELCOME PAGE (Figure 2 Style)
+// ============================================
+
+// Hide navbar and remove top padding on welcome page
+body:has(.welcome-hero) {
+  .navbar {
+    display: none !important;
+  }
+  
+  padding-top: 0 !important;
+  
+  #quarto-content {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  .page-layout-custom.page-navbar {
+    padding-top: 0 !important;
+  }
+  
+  header.headroom {
+    display: none !important;
+  }
+}
+
+.welcome-hero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: 
+    linear-gradient(rgba(60, 50, 40, 0.35), rgba(60, 50, 40, 0.45)),
+    url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1920&q=80') center/cover no-repeat;
+}
+
+.welcome-hero .subtitle-top {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  opacity: 0.8;
+}
+
+// Name stack
+.name-stack {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.name-cn {
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: white;
+  line-height: 1.15;
+  margin: 0 0 0.15rem 0;
+}
+
+.name-en {
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(0.7rem, 1.4vw, 0.9rem);
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.3;
+  margin: 0 0 0.1rem 0;
+}
+
+.name-abbr {
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(0.6rem, 1.2vw, 0.75rem);
+  font-weight: 300;
+  letter-spacing: 7px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.name-divider {
+  width: 30px;
+  height: 1px;
+  background: rgba(255,255,255,0.25);
+  margin: 1.2rem auto;
+}
+
+.welcome-location {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 1.2rem;
+}
+
+.welcome-quote {
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  font-size: clamp(0.8rem, 1.4vw, 0.95rem);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.7);
+  max-width: 380px;
+  margin: 0 auto 2.5rem;
+}
+
+.name-en p,
+.name-abbr p,
+.welcome-location p,
+.welcome-quote p {
+  margin: 0;
+}
+
+.welcome-hero .enter-btn {
+  display: inline-block;
+  padding: 14px 48px;
+  border: 2px solid rgba(255,255,255,0.9);
+  color: white;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  background: transparent;
+  
+  &:hover {
+    background: rgba(255,255,255,0.95);
+    color: #3a3a3a;
+    border-color: white;
+  }
+}
+
+.welcome-hero .social-links {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 28px;
+  
+  a {
+    color: white;
+    font-size: 1.3rem;
+    opacity: 0.85;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    
+    &:hover {
+      opacity: 1;
+      transform: translateY(-3px);
+    }
+  }
+}
+
+// ============================================
+// HOME PAGE (Figure 1 Style)
+// ============================================
+
+.home-page {
+  background: #f7f4ef;
+  min-height: calc(100vh - 60px);
+}
+
+.home-container {
+  display: flex;
+  min-height: calc(100vh - 60px - 100px);
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.home-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.profile-main-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: cover;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+}
+
+.home-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 4rem;
+  
+  h1 {
+    font-family: 'Playfair Display', serif;
+    color: #c9a87c;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+  
+  p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #5a5a5a;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+  
+  .highlight {
+    border-bottom: 1px solid #c9a87c;
+    padding-bottom: 1px;
+  }
+}
+
+.small-photo-img {
+  margin-top: 2rem;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.home-bottom-bar {
+  height: 100px;
+  background: #e8c4c4;
+  width: 100%;
+}
+
+// ============================================
+// RESPONSIVE
+// ============================================
+
+@media (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+  }
+  
+  .home-left {
+    padding: 2rem 2rem 1rem;
+  }
+  
+  .profile-main-img {
+    max-height: 50vh;
+  }
+  
+  .home-right {
+    padding: 2rem;
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  .home-bottom-bar {
+    height: 80px;
+  }
+  
+  .welcome-hero h1 {
+    letter-spacing: 4px;
+  }
+  
+  .welcome-hero .social-links {
+    gap: 20px;
+  }
+}
+
+// ============================================
+// NAVBAR STYLING
+// ============================================
+
+.navbar {
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  box-shadow: none !important;
+  padding: 0.8rem 2rem;
+  
+  .nav-link {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #4a4a4a !important;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: #c9a87c !important;
+    }
+  }
+  
+  .navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #4a4a4a !important;
+    letter-spacing: 1px;
+  }
+}
+
+// ============================================
+// GENERAL PAGE STYLING
+// ============================================
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #3a3a3a;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+.page-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+// ============================================
+// XANADU PAGE — Animated Title
+// ============================================
+
+.xanadu-page {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #f7f4ef 0%, #ece5db 100%);
+  padding-top: 15vh;
+  text-align: center;
+}
+
+.xanadu-title-wrapper {
+  margin-bottom: 3rem;
+}
+
+.xanadu-animated-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+  font-weight: 400;
+  color: #3a3a3a;
+  letter-spacing: 4px;
+  line-height: 1.3;
+  margin: 0;
+  
+  .word {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 0.15em;
+    vertical-align: baseline;
+  }
+  
+  .drop-cap {
+    display: inline-block;
+    font-weight: 700;
+    transform: scale(1.4);
+    transform-origin: center;
+    animation: dropCapShrink 2s ease-out forwards;
+    vertical-align: baseline;
+  }
+}
+
+@keyframes dropCapShrink {
+  0% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.xanadu-subtitle {
+  font-family: 'LiSu', '隶书', 'STKaiti', 'KaiTi', serif;
+  font-size: clamp(1.1rem, 2.75vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: 8px;
+  color: #6a6a6a;
+  margin-top: 1.5rem;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 1s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+// ============================================
+// GENERAL PLACEHOLDER PAGES
+// ============================================
+
+.placeholder-section {
+  text-align: center;
+  padding: 6rem 2rem;
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #c9a87c;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #888;
+    font-weight: 300;
+  }
+}

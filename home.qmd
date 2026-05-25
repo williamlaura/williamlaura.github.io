@@ -1,0 +1,37 @@
+---
+title: "Home"
+page-layout: custom
+---
+
+::: {.home-page}
+
+::: {.home-container}
+
+::: {.home-left}
+```{=html}
+<img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80" alt="Profile photo" class="profile-main-img">
+```
+:::
+
+::: {.home-right}
+
+# Hi, I'm Name
+
+I'm a researcher and developer passionate about creating spacious workweeks, steady and [sustainable growth]{.highlight}, and honoring creativity each day in your work.
+
+I've spent the past decade supporting hundreds of projects to bridge the gap towards more [flexibility, ease]{.highlight}, and [stability]{.highlight} in their journey and I would be over the moon to connect with you too.
+
+::: {.small-photo}
+```{=html}
+<img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=400&q=80" alt="Decorative photo" class="small-photo-img">
+```
+:::
+
+:::
+
+:::
+
+::: {.home-bottom-bar}
+:::
+
+:::

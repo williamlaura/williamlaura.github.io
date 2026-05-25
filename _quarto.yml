@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "My Homepage"
+  favicon: images/favicon.png
+  
+  navbar:
+    background: "#f7f4ef"
+    foreground: "#4a4a4a"
+    type: light
+    left:
+      - text: "Home"
+        href: home.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Foodmap"
+        href: foodmap.qmd
+      - text: "Xanadu"
+        href: xanadu.qmd
+
+format:
+  html:
+    theme: styles.scss
+    toc: false
+    css:
+      - https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css
+    mainfont: Lato
+    monofont: Fira Code

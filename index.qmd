@@ -1,0 +1,46 @@
+---
+title: "Welcome"
+page-layout: custom
+---
+
+::: {.welcome-hero}
+
+::: {.subtitle-top}
+Digital Explorer | Poetic Gourmand
+:::
+
+::: {.name-stack}
+
+# 王朱逸男 {.name-cn}
+
+::: {.name-en}
+WILLIAM KING
+:::
+
+::: {.name-abbr}
+G. D. L
+:::
+
+:::
+
+::: {.name-divider}
+:::
+
+::: {.welcome-location}
+杭州 HANGZHOU
+:::
+
+::: {.welcome-quote}
+一个喜欢用数字解构世界、又用诗与佳肴重建温度的人
+:::
+
+[Enter](home.qmd){.enter-btn}
+
+::: {.social-links}
+<a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+<a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+<a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+<a href="mailto:hello@example.com"><i class="bi bi-envelope"></i></a>
+:::
+
+:::

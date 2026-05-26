@@ -14,11 +14,11 @@ Digital Explorer | Poetic Gourmand
 # 王朱逸男 {.name-cn}
 
 ::: {.name-en}
-WILLIAM KING
+William King
 :::
 
 ::: {.name-abbr}
-G. D. L
+G. D. L.
 :::
 
 :::
@@ -31,7 +31,7 @@ G. D. L
 :::
 
 ::: {.welcome-quote}
-一个喜欢用数字解构世界、又用诗与佳肴重建温度的人
+一个喜欢用数字解构世界，又用诗与佳肴重建温度的人
 :::
 
 [Enter](home.qmd){.enter-btn}

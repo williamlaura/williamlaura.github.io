@@ -1,11 +1,70 @@
 ---
 title: "Publications"
+page-layout: custom
 ---
 
-::: {.placeholder-section}
+::: {.xanadu-page}
 
-# Publications
+::: {.xanadu-title-wrapper}
+```{=html}
+<h1 class="xanadu-animated-title">
+  <span class="word"><span class="drop-cap" style="animation-delay: 0s;">A</span>cademic</span>
+  <span class="word"><span class="drop-cap" style="animation-delay: 0.1s;">P</span>ublications</span>
+</h1>
+```
 
-Coming soon...
+::: {.xanadu-subtitle}
+学术发表
+:::
+:::
+
+::: {.pub-intro}
+作者有些佛系，只在这世上留下了这些论文与专利，算是来过的痕迹。
+:::
+
+::: {.pub-section}
+
+## 论文
+
+<div class="pub-list">
+
+<div class="pub-item">
+  <div class="pub-title">Scheduling Games with Potential Penalties on the Move of Jobs</div>
+  <div class="pub-authors">Zhuyinan Wang, Chen Zhang, Zhiyi Tan</div>
+  <div class="pub-venue"><em>Journal of the Operations Research Society of China</em>, 2023, 1–24</div>
+  <div class="pub-doi">DOI: <a href="https://doi.org/10.1007/s40305-023-00501-4" target="_blank">10.1007/s40305-023-00501-4</a></div>
+</div>
+
+<div class="pub-item">
+  <div class="pub-title">Inefficiency of Approximate Nash Equilibria for Scheduling Games</div>
+  <div class="pub-authors">Zhuyinan Wang, Chen Zhang, Zhiyi Tan</div>
+  <div class="pub-venue"><em>Journal of Combinatorial Optimization</em>, 2025, 49(3)</div>
+  <div class="pub-doi">DOI: <a href="https://doi.org/10.1007/s10878-025-01274-7" target="_blank">10.1007/s10878-025-01274-7</a></div>
+</div>
+
+</div>
+
+## 专利
+
+<div class="patent-list">
+
+<div class="patent-item">
+  <div class="patent-title">一种中药配方颗粒配伍调剂系统及其应用</div>
+  <div class="patent-info">ZL201711397418.0 · 授权日期 2020.07.24</div>
+</div>
+
+<div class="patent-item">
+  <div class="patent-title">一种基于惯性和空间引导的导流设备及应用</div>
+  <div class="patent-info">ZL2017106619165 · 授权日期 2019.09.24</div>
+</div>
+
+<div class="patent-item">
+  <div class="patent-title">一种立交式分拣设备及方法</div>
+  <div class="patent-info">ZL2014103308832 · 授权日期 2017.05.03</div>
+</div>
+
+</div>
+
+:::
 
 :::

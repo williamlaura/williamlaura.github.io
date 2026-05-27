@@ -194,6 +194,11 @@ body:has(.welcome-hero) {
   min-height: calc(100vh - 60px);
 }
 
+.home-title-section {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+}
+
 .home-container {
   display: flex;
   min-height: calc(100vh - 60px - 100px);
@@ -232,6 +237,20 @@ body:has(.welcome-hero) {
     font-weight: 400;
     margin-bottom: 2rem;
     line-height: 1.2;
+  }
+  
+  .typewriter-title {
+    min-height: 1.2em;
+  }
+  
+  .typewriter-cursor {
+    color: #c9a87c;
+    font-weight: 300;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
   }
   
   p {

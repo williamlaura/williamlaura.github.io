@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0162eec679f86592aaa0e0b0a852c927.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7a6cdc56f6544b208f8f4ba15a5320de.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -142,12 +142,42 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="home-page">
+<div class="home-title-section">
+<h1 class="xanadu-animated-title">
+  <span class="word"><span class="drop-cap" style="animation-delay: 0s;">W</span>illiam</span>
+  <span class="word"><span class="drop-cap" style="animation-delay: 0s;">K</span>ing's</span>
+  <span class="word"><span class="drop-cap" style="animation-delay: 0s;">H</span>omepage</span>
+</h1>
+</div>
 <div class="home-container">
 <div class="home-left">
 <img src="images/headshot.jpg" alt="Profile photo" class="profile-main-img">
 </div>
-<section id="hi-im-王朱逸男" class="level1 home-right">
-<h1>Hi, I’m 王朱逸男</h1>
+<div class="home-right">
+<h1 class="typewriter-title">
+  <span class="typewriter-text"></span><span class="typewriter-cursor">|</span>
+</h1>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const text = "Hi, I'm 王朱逸男";
+  const el = document.querySelector('.typewriter-text');
+  const cursor = document.querySelector('.typewriter-cursor');
+  let i = 0;
+  const speed = 110;
+
+  function type() {
+    if (i < text.length) {
+      el.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    } else {
+      cursor.style.animation = 'blink 1s step-end infinite';
+    }
+  }
+
+  setTimeout(type, 500);
+});
+</script>
 <p>我是一名非典型的数学博士，杭州人，双鱼座，理性严谨与感性浪漫在我的体内不曾交战，反倒合伙开了一家美食工坊。</p>
 <p>我本科到博士阶段都在浙江大学数学系，醉心于运筹学与排序博弈，期待用模型、算法和策略去拆解世界运行的底层逻辑，用数字去破解复杂世界，像一把手术刀剖开混沌，那是一种相当令我着迷的暴力美学。如今在中国科学院杭州医学研究所做博士后，把这种暴力美学搬进了AI驱动的智能制药的领域，研究纳米抗体与定向进化。说到底，都是在用数字规律探求复杂系统背后的最优解，不过对象从工件换成了蛋白质序列。</p>
 <p>作为非典型数学博士，我的世界里远不只有公式和证明。理性的尽头，往往是更深的温柔与浪漫，诗与美食构建我的世界另一半不一样的色彩。有人问我，这样矛盾事情能不能既要又要。我的回答是：可以，只是需要更聪明更平衡的解法。</p>
@@ -156,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="small-photo">
 <img src="images/yuanbao.jpg" alt="Decorative photo" class="small-photo-img">
 </div>
-</section>
+</div>
 </div>
 <section id="经历" class="level2 experience-section">
 <h2 data-anchor-id="经历">经历</h2>

@@ -3,6 +3,10 @@ title: "Publications"
 page-layout: custom
 ---
 
+```{=html}
+<div class="music-meta" data-src="music/publications.mp3" data-title="学术漫步" data-artist="轻音乐" style="display:none;"></div>
+```
+
 ::: {.xanadu-page}
 
 ::: {.xanadu-title-wrapper}

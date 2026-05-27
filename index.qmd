@@ -3,6 +3,10 @@ title: "Welcome"
 page-layout: custom
 ---
 
+```{=html}
+<div class="music-meta" data-src="music/index.mp3" data-title="欢迎" data-artist="钢琴随笔" style="display:none;"></div>
+```
+
 ::: {.welcome-hero}
 
 ::: {.subtitle-top}
@@ -44,3 +48,19 @@ G. D. L.
 :::
 
 :::
+
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var images = ['images/welcome1.jpg', 'images/welcome2.jpg'];
+  var randomImg = images[Math.floor(Math.random() * images.length)];
+  var hero = document.querySelector('.welcome-hero');
+  if (hero) {
+    hero.style.backgroundImage = 'linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.45)), url("' + randomImg + '")';
+    hero.style.backgroundSize = 'cover';
+    hero.style.backgroundPosition = 'center 25%';
+    hero.style.backgroundRepeat = 'no-repeat';
+  }
+});
+</script>
+```

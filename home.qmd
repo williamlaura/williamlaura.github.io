@@ -3,6 +3,10 @@ title: "Home"
 page-layout: custom
 ---
 
+```{=html}
+<div class="music-meta" data-src="music/home.mp3" data-title="Homecoming" data-artist="Evan Call" style="display:none;"></div>
+```
+
 ::: {.home-page}
 
 ::: {.home-title-section}

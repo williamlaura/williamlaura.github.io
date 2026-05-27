@@ -2,6 +2,10 @@
 title: "Foodmap"
 ---
 
+```{=html}
+<div class="music-meta" data-src="music/foodmap.mp3" data-title="餐桌上的爵士" data-artist="Smooth Trio" style="display:none;"></div>
+```
+
 ::: {.placeholder-section}
 
 # Foodmap

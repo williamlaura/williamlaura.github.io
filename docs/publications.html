@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7a6cdc56f6544b208f8f4ba15a5320de.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2111b791863eee94c08a68a6f874cf9e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -141,6 +141,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="music-meta" data-src="music/publications.mp3" data-title="学术漫步" data-artist="轻音乐" style="display:none;"></div>
 <div class="xanadu-page">
 <div class="xanadu-title-wrapper">
 <h1 class="xanadu-animated-title">
@@ -624,6 +625,79 @@ ZL2014103308832 · 授权日期 2017.05.03
   });
   </script>
 </div> <!-- /content -->
+<div id="music-player" style="display:none;">
+  <div class="music-info">
+    <div class="music-title"></div>
+    <div class="music-artist"></div>
+  </div>
+  <button id="music-toggle" aria-label="播放/暂停">
+    <span class="music-icon-play">♪</span>
+    <span class="music-icon-pause">❚❚</span>
+    <span class="music-wave"><span></span><span></span><span></span></span>
+  </button>
+</div>
+<audio id="bgm" preload="auto"></audio>
+<script>
+(function() {
+  var meta = document.querySelector('.music-meta');
+  var player = document.getElementById('music-player');
+  var audio = document.getElementById('bgm');
+  var toggle = document.getElementById('music-toggle');
+  if (!meta || !meta.dataset.src) return;
+  audio.src = meta.dataset.src;
+  audio.load();
+  player.querySelector('.music-title').textContent = meta.dataset.title || '';
+  player.querySelector('.music-artist').textContent = meta.dataset.artist || '';
+  player.style.display = 'flex';
+  var isPlaying = false;
+
+  function startMusic() {
+    var playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.then(function() {
+        isPlaying = true;
+        player.classList.add('playing');
+      }).catch(function(e) {
+        console.log('Playback blocked or failed:', e.name);
+      });
+    }
+  }
+
+  // 页面加载后立即尝试自动播放（浏览器通常会阻止）
+  startMusic();
+
+  // 首次用户交互时自动开始
+  function onFirstInteraction() {
+    startMusic();
+    ['click', 'touchstart', 'keydown', 'scroll', 'wheel'].forEach(function(evt) {
+      document.removeEventListener(evt, onFirstInteraction);
+    });
+  }
+  ['click', 'touchstart', 'keydown', 'scroll', 'wheel'].forEach(function(evt) {
+    document.addEventListener(evt, onFirstInteraction, { once: true });
+  });
+
+  // 按钮手动控制
+  toggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    if (isPlaying) {
+      audio.pause();
+      isPlaying = false;
+      player.classList.remove('playing');
+    } else {
+      startMusic();
+    }
+  });
+
+  audio.addEventListener('ended', function() {
+    isPlaying = false;
+    player.classList.remove('playing');
+  });
+  audio.addEventListener('error', function() {
+    console.log('Audio file not found:', audio.src);
+  });
+})();
+</script>
 
 
 

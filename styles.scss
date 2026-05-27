@@ -56,9 +56,8 @@ body:has(.welcome-hero) {
   justify-content: center;
   text-align: center;
   color: #2c2c2c;
-  background: 
-    linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.45)),
-    url('images/welcome1.jpg') center 25% / cover no-repeat;
+  background: linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.45));
+  background-color: #e8e4dc;
 }
 
 .welcome-hero .subtitle-top {
@@ -68,7 +67,8 @@ body:has(.welcome-hero) {
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 3rem;
-  opacity: 0.8;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.3s forwards;
 }
 
 // Name stack
@@ -82,7 +82,7 @@ body:has(.welcome-hero) {
   font-size: clamp(2.6em, 5vw, 3.9rem);
   font-weight: 400;
   letter-spacing: 0.05em;
-  color: #2c2c2c;
+  color: rgba(44,44,44,0.88);
   line-height: 1.15;
   margin: 0 0 0.5rem 0;
 }
@@ -95,6 +95,8 @@ body:has(.welcome-hero) {
   color: rgba(44,44,44,0.7);
   line-height: 1.3;
   margin: 0 0 0.4rem 0;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.5s forwards;
 }
 
 .name-abbr {
@@ -105,6 +107,8 @@ body:has(.welcome-hero) {
   color: rgba(44,44,44,0.5);
   line-height: 1.3;
   margin: 0;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.7s forwards;
 }
 
 .name-divider {
@@ -112,6 +116,8 @@ body:has(.welcome-hero) {
   height: 1px;
   background: rgba(44,44,44,0.2);
   margin: 1.2rem auto;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.9s forwards;
 }
 
 .welcome-location {
@@ -122,6 +128,8 @@ body:has(.welcome-hero) {
   text-transform: uppercase;
   color: rgba(44,44,44,0.55);
   margin-bottom: 1.2rem;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 1.1s forwards;
 }
 
 .welcome-quote {
@@ -133,6 +141,8 @@ body:has(.welcome-hero) {
   color: rgba(44,44,44,0.65);
   white-space: nowrap;
   margin: 0 auto 3.5rem;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 1.3s forwards;
 }
 
 .name-en p,
@@ -170,6 +180,8 @@ body:has(.welcome-hero) {
   transform: translateX(-50%);
   display: flex;
   gap: 28px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 1.7s forwards;
   
   a {
     color: #4a4a4a;
@@ -832,4 +844,139 @@ h1 {
     color: #888;
     font-weight: 300;
   }
+}
+
+
+// ============================================
+// MUSIC PLAYER
+// ============================================
+
+#music-player {
+  position: fixed;
+  bottom: 28px;
+  right: 80px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 1;
+}
+
+#music-toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: #c9a87c;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  position: relative;
+  flex-shrink: 0;
+  
+  &:hover {
+    border-color: rgba(201,168,124,0.5);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+  }
+}
+
+#music-player.playing #music-toggle {
+  animation: musicSpin 4s linear infinite;
+}
+
+.music-icon-play,
+.music-icon-pause {
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+
+.music-icon-play {
+  font-size: 1.6rem;
+  margin-top: -2px;
+}
+
+.music-icon-pause {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.music-wave {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 22px;
+  position: absolute;
+}
+
+.music-wave span {
+  display: block;
+  width: 4px;
+  background: #c9a87c;
+  border-radius: 2px;
+  animation: musicWave 1.2s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+.music-wave span:nth-child(1) { height: 40%; animation-delay: 0s; }
+.music-wave span:nth-child(2) { height: 70%; animation-delay: 0.25s; }
+.music-wave span:nth-child(3) { height: 50%; animation-delay: 0.5s; }
+
+@keyframes musicWave {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1); }
+}
+
+@keyframes musicSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+// Play / Pause state toggles
+#music-player.playing .music-icon-play,
+#music-player.playing .music-icon-pause {
+  opacity: 0;
+}
+
+#music-player:not(.playing) .music-wave {
+  opacity: 0;
+}
+
+#music-player.playing .music-wave {
+  opacity: 1;
+}
+
+// Info card
+.music-info {
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 12px 20px;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  font-family: 'Lato', sans-serif;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.music-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #3a3a3a;
+  letter-spacing: 0.5px;
+}
+
+.music-artist {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #999;
+  margin-top: 4px;
+  letter-spacing: 0.5px;
 }

@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - "images/welcome1.jpg"
+    - "images/welcome2.jpg"
+    - "music/*"
 
 website:
   title: "My Homepage"
@@ -28,3 +32,78 @@ format:
       - https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css
     mainfont: Lato
     monofont: Fira Code
+    include-after-body:
+      text: |
+        <div id="music-player" style="display:none;">
+          <div class="music-info">
+            <div class="music-title"></div>
+            <div class="music-artist"></div>
+          </div>
+          <button id="music-toggle" aria-label="播放/暂停">
+            <span class="music-icon-play">♪</span>
+            <span class="music-icon-pause">❚❚</span>
+            <span class="music-wave"><span></span><span></span><span></span></span>
+          </button>
+        </div>
+        <audio id="bgm" preload="auto"></audio>
+        <script>
+        (function() {
+          var meta = document.querySelector('.music-meta');
+          var player = document.getElementById('music-player');
+          var audio = document.getElementById('bgm');
+          var toggle = document.getElementById('music-toggle');
+          if (!meta || !meta.dataset.src) return;
+          audio.src = meta.dataset.src;
+          audio.load();
+          player.querySelector('.music-title').textContent = meta.dataset.title || '';
+          player.querySelector('.music-artist').textContent = meta.dataset.artist || '';
+          player.style.display = 'flex';
+          var isPlaying = false;
+
+          function startMusic() {
+            var playPromise = audio.play();
+            if (playPromise !== undefined) {
+              playPromise.then(function() {
+                isPlaying = true;
+                player.classList.add('playing');
+              }).catch(function(e) {
+                console.log('Playback blocked or failed:', e.name);
+              });
+            }
+          }
+
+          // 页面加载后立即尝试自动播放（浏览器通常会阻止）
+          startMusic();
+
+          // 首次用户交互时自动开始
+          function onFirstInteraction() {
+            startMusic();
+            ['click', 'touchstart', 'keydown', 'scroll', 'wheel'].forEach(function(evt) {
+              document.removeEventListener(evt, onFirstInteraction);
+            });
+          }
+          ['click', 'touchstart', 'keydown', 'scroll', 'wheel'].forEach(function(evt) {
+            document.addEventListener(evt, onFirstInteraction, { once: true });
+          });
+
+          // 按钮手动控制
+          toggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            if (isPlaying) {
+              audio.pause();
+              isPlaying = false;
+              player.classList.remove('playing');
+            } else {
+              startMusic();
+            }
+          });
+
+          audio.addEventListener('ended', function() {
+            isPlaying = false;
+            player.classList.remove('playing');
+          });
+          audio.addEventListener('error', function() {
+            console.log('Audio file not found:', audio.src);
+          });
+        })();
+        </script>

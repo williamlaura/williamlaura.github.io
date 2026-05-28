@@ -5,6 +5,16 @@ page-layout: custom
 
 ```{=html}
 <div class="music-meta" data-src="music/xanadu.mp3" data-title="桃花源记" data-artist="弦乐四重奏" style="display:none;"></div>
+
+<div id="xanadu-gate" class="gate-overlay">
+  <div class="gate-card">
+    <h2>请输入密码</h2>
+    <p>本页面尚未完成，需输入密码查看</p>
+    <input type="password" id="gate-password" class="gate-input" placeholder="密码" />
+    <button id="gate-submit" class="gate-btn">进入</button>
+    <p id="gate-error" class="gate-error">密码错误，即将返回主页...</p>
+  </div>
+</div>
 ```
 
 ::: {.xanadu-page}
@@ -23,10 +33,58 @@ page-layout: custom
 :::
 :::
 
-::: {.placeholder-section}
+::: {.xanadu-description}
+描述
+:::
 
-页面内容即将呈现...
-
+::: {.poem-grid}
+```{=html}
+<a href="poems/poem1.html" class="poem-card">
+  <div class="poem-card-number">01</div>
+  <div class="poem-card-title">诗一</div>
+  <div class="poem-card-meta">2025 · 王朱逸男</div>
+</a>
+```
 :::
 
 :::
+
+```{=html}
+<script>
+(function() {
+  var overlay = document.getElementById('xanadu-gate');
+  var input = document.getElementById('gate-password');
+  var submit = document.getElementById('gate-submit');
+  var error = document.getElementById('gate-error');
+  var correctPassword = '958272';
+
+  function goHome() {
+    window.location.href = 'home.html';
+  }
+
+  function checkPassword() {
+    if (input.value === correctPassword) {
+      overlay.style.display = 'none';
+    } else {
+      error.style.display = 'block';
+      input.disabled = true;
+      submit.disabled = true;
+      setTimeout(goHome, 1200);
+    }
+  }
+
+  submit.addEventListener('click', checkPassword);
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') checkPassword();
+  });
+
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) goHome();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') goHome();
+  });
+})();
+</script>
+```

@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2111b791863eee94c08a68a6f874cf9e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-27d8e1d93716579976f39977ed4c1085.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -142,6 +142,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="music-meta" data-src="music/xanadu.mp3" data-title="桃花源记" data-artist="弦乐四重奏" style="display:none;"></div>
+
+<div id="xanadu-gate" class="gate-overlay">
+  <div class="gate-card">
+    <h2>请输入密码</h2>
+    <p>本页面尚未完成，需输入密码查看</p>
+    <input type="password" id="gate-password" class="gate-input" placeholder="密码">
+    <button id="gate-submit" class="gate-btn">进入</button>
+    <p id="gate-error" class="gate-error">密码错误，即将返回主页...</p>
+  </div>
+</div>
 <div class="xanadu-page">
 <div class="xanadu-title-wrapper">
 <h1 class="xanadu-animated-title">
@@ -153,10 +163,54 @@ ul.task-list li input[type="checkbox"] {
 <p>诗句藏山海，笔下有桃源</p>
 </div>
 </div>
-<div class="placeholder-section">
-<p>页面内容即将呈现…</p>
+<div class="xanadu-description">
+<p>描述</p>
+</div>
+<div class="poem-grid">
+<a href="poems/poem1.html" class="poem-card">
+  <div class="poem-card-number">01</div>
+  <div class="poem-card-title">诗一</div>
+  <div class="poem-card-meta">2025 · 王朱逸男</div>
+</a>
 </div>
 </div>
+<script>
+(function() {
+  var overlay = document.getElementById('xanadu-gate');
+  var input = document.getElementById('gate-password');
+  var submit = document.getElementById('gate-submit');
+  var error = document.getElementById('gate-error');
+  var correctPassword = '958272';
+
+  function goHome() {
+    window.location.href = 'home.html';
+  }
+
+  function checkPassword() {
+    if (input.value === correctPassword) {
+      overlay.style.display = 'none';
+    } else {
+      error.style.display = 'block';
+      input.disabled = true;
+      submit.disabled = true;
+      setTimeout(goHome, 1200);
+    }
+  }
+
+  submit.addEventListener('click', checkPassword);
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') checkPassword();
+  });
+
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) goHome();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') goHome();
+  });
+})();
+</script>
 
 
 

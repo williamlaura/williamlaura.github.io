@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "foodmap.html",
-    "href": "foodmap.html",
-    "title": "Foodmap",
-    "section": "",
-    "text": "Foodmap\nComing soon…"
-  },
-  {
     "objectID": "home.html#经历",
     "href": "home.html#经历",
     "title": "Home",
@@ -19,6 +12,13 @@
     "title": "Home",
     "section": "探索更多",
     "text": "探索更多\n\n  \n    学术发表\n    这里没什么有趣的东西，不过是论文与专利\n    进入 →\n  \n  \n    美食地图\n    一张由餐厅坐标连成的真诚轨迹。\n    进入 →\n  \n  \n    笔下桃源\n    数学博士的别样浪漫\n    进入 →"
+  },
+  {
+    "objectID": "foodmap.html",
+    "href": "foodmap.html",
+    "title": "Foodmap",
+    "section": "",
+    "text": "Foodmap\nComing soon…"
   },
   {
     "objectID": "publications.html#论文",

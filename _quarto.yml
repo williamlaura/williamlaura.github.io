@@ -5,6 +5,8 @@ project:
     - "images/welcome1.jpg"
     - "images/welcome2.jpg"
     - "music/*"
+  render:
+    - "**/*.qmd"
 
 website:
   title: "My Homepage"

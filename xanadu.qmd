@@ -53,6 +53,36 @@ page-layout: custom
   <div class="poem-card-title">归家路</div>
   <div class="poem-card-meta">2026 · G.D.L.</div>
 </a>
+<a href="poems/poem3.html" class="poem-card">
+  <div class="poem-card-number">03</div>
+  <div class="poem-card-title">观南澳大桥</div>
+  <div class="poem-card-meta">2026 · G.D.L.</div>
+</a>
+<a href="poems/poem4.html" class="poem-card">
+  <div class="poem-card-number">04</div>
+  <div class="poem-card-title">晨行</div>
+  <div class="poem-card-meta">2026 · G.D.L.</div>
+</a>
+<a href="poems/poem5.html" class="poem-card">
+  <div class="poem-card-number">05</div>
+  <div class="poem-card-title">算尽何妨</div>
+  <div class="poem-card-meta">2026 · G.D.L.</div>
+</a>
+<a href="poems/poem6.html" class="poem-card">
+  <div class="poem-card-number">06</div>
+  <div class="poem-card-title">春风秋影</div>
+  <div class="poem-card-meta">2026 · G.D.L.</div>
+</a>
+<a href="poems/poem7.html" class="poem-card">
+  <div class="poem-card-number">07</div>
+  <div class="poem-card-title">归途偶感</div>
+  <div class="poem-card-meta">2026 · G.D.L.</div>
+</a>
+<a href="poems/poem8.html" class="poem-card">
+  <div class="poem-card-number">08</div>
+  <div class="poem-card-title">再游钱王祠</div>
+  <div class="poem-card-meta">2026 · G.D.L.</div>
+</a>
 ```
 :::
 

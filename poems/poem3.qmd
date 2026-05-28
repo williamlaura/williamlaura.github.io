@@ -1,0 +1,52 @@
+---
+title: "观南澳大桥"
+page-layout: custom
+---
+
+```{=html}
+<div class="music-meta" data-src="music/xanadu.mp3" data-title="桃花源记" data-artist="弦乐四重奏" style="display:none;"></div>
+```
+
+::: {.xanadu-page}
+
+::: {.poem-title-wrapper}
+# 观南澳大桥 {.poem-title}
+:::
+
+::: {.poem-body}
+
+万里云天望一线，
+
+百乘宝驹过身前。
+
+碧波赫塔难相映，
+
+此去天涯何所牵。
+
+:::
+
+::: {.poem-reviews}
+
+## 读诗笔记 {.review-section-title}
+
+::: {.review-card .review-deepseek}
+<span class="review-badge">DeepSeek</span>
+
+以"万里云天"与"大桥一线"的开阔对比起笔，空间感极强。"百乘宝驹过身前"将现代车流雅化为古典意象，动势流畅。第三句"碧波赫塔难相映"在红与绿的视觉张力中，暗中埋下"隔"的意味，为末句"此去天涯何所牵"的追问做了铺垫。全诗由远及近、由景入情，末句以问作结，有余韵。
+:::
+
+::: {.review-card .review-kimi}
+<span class="review-badge">Kimi</span>
+
+此诗以"万里云天"的宏阔起笔，却在"一线"大桥处骤然收紧，空间的张力瞬间拉满。"百乘宝驹"的雅化令人称妙——现代车流在此褪去了喧嚣，化作古典画卷中的仪仗。而"碧波赫塔"的红绿对撞，不仅是色彩的碰撞，更是"相隔"的视觉隐喻。末句"此去天涯何所牵"以问代答，留下的是对远方与归属的永恒悬置。
+:::
+
+:::
+
+::: {.poem-nav}
+
+[← 返回 Xanadu](../xanadu.qmd){.btn .btn-primary role="button"}
+
+:::
+
+:::

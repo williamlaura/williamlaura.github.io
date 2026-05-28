@@ -1,0 +1,52 @@
+---
+title: "再游钱王祠"
+page-layout: custom
+---
+
+```{=html}
+<div class="music-meta" data-src="music/xanadu.mp3" data-title="桃花源记" data-artist="弦乐四重奏" style="display:none;"></div>
+```
+
+::: {.xanadu-page}
+
+::: {.poem-title-wrapper}
+# 再游钱王祠 {.poem-title}
+:::
+
+::: {.poem-body}
+
+湖光山色似从前，
+
+身侧涟漪散如烟。
+
+顾自欢笑顾自泪，
+
+回首已是半生缘。
+
+:::
+
+::: {.poem-reviews}
+
+## 读诗笔记 {.review-section-title}
+
+::: {.review-card .review-deepseek}
+<span class="review-badge">DeepSeek</span>
+
+首句"似从前"以不变写变，第二句"散如烟"将消逝感具象化。第三句"顾自欢笑顾自泪"以重复的"顾自"写出内外分裂，末句"半生缘"三字收束全篇，轻描淡写中藏着厚重的时光感。
+:::
+
+::: {.review-card .review-kimi}
+<span class="review-badge">Kimi</span>
+
+"似从前"三个字，是旧地重游者最熟悉的幻觉。诗人清醒地知道"散如烟"才是真相，却依然在第三句陷入了"顾自欢笑顾自泪"的分裂——不是不知，而是明知故犯。这种重复的"顾自"，像是一个人在镜中与自己对话，笑与泪都失去了观众。末句"半生缘"轻得像一声叹息，却承载了半生湖光山色的重量。
+:::
+
+:::
+
+::: {.poem-nav}
+
+[← 返回 Xanadu](../xanadu.qmd){.btn .btn-primary role="button"}
+
+:::
+
+:::

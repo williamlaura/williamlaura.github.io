@@ -1,0 +1,64 @@
+---
+title: "算尽何妨"
+page-layout: custom
+---
+
+```{=html}
+<div class="music-meta" data-src="music/xanadu.mp3" data-title="桃花源记" data-artist="弦乐四重奏" style="display:none;"></div>
+```
+
+::: {.xanadu-page}
+
+::: {.poem-title-wrapper}
+# 算尽何妨 {.poem-title}
+:::
+
+::: {.poem-body}
+
+平生向来算无疑，
+
+未肯虚抛寸光阴。
+
+明知此去多虚掷，
+
+却向空山行且吟。
+
+非是路尽不知返，
+
+只将痴行应子衿。
+
+花落九分难留一，
+
+孤心立在月西沉。
+
+何妨空枝不复林，
+
+轮回还做此中薪。
+
+:::
+
+::: {.poem-reviews}
+
+## 读诗笔记 {.review-section-title}
+
+::: {.review-card .review-deepseek}
+<span class="review-badge">DeepSeek</span>
+
+"明知虚掷却行吟"是全诗的题眼，理性与情感的对撞贯穿始终。末句"轮回还做此中薪"将个人的执念推向宿命的循环，意象独特而有力。"花落九分"的数字精确化处理，在旧体诗中是一次有辨识度的尝试。
+:::
+
+::: {.review-card .review-kimi}
+<span class="review-badge">Kimi</span>
+
+一位数学博士的"算无疑"，在命运面前遭遇了降维打击。"明知虚掷却行吟"是理性对情感的投降书，也是全诗的精神内核。"花落九分难留一"的数字精确，既是数学家的本能，也是面对残缺时的自我慰藉。而"轮回还做此中薪"一句尤为沉痛——不是不知执迷，而是明知执迷仍选择燃烧自己。这不是盲目的浪漫，而是一种清醒的殉道。
+:::
+
+:::
+
+::: {.poem-nav}
+
+[← 返回 Xanadu](../xanadu.qmd){.btn .btn-primary role="button"}
+
+:::
+
+:::

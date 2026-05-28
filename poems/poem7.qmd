@@ -1,0 +1,60 @@
+---
+title: "归途偶感"
+page-layout: custom
+---
+
+```{=html}
+<div class="music-meta" data-src="music/xanadu.mp3" data-title="桃花源记" data-artist="弦乐四重奏" style="display:none;"></div>
+```
+
+::: {.xanadu-page}
+
+::: {.poem-title-wrapper}
+# 归途偶感 {.poem-title}
+:::
+
+::: {.poem-body}
+
+归途忽见街灯明，
+
+遥想伊人倚晖祈。
+
+可怜卯月初九日，
+
+此般风雅随灯熄。
+
+自别后，千愿寂，
+
+唯余一念待归倚。
+
+霜华未染车辙尽，
+
+犹许残阳照旧衣。
+
+:::
+
+::: {.poem-reviews}
+
+## 读诗笔记 {.review-section-title}
+
+::: {.review-card .review-deepseek}
+<span class="review-badge">DeepSeek</span>
+
+前四句由街灯触发回忆，后四句转入短促的自白式节奏。"霜华未染车辙尽"写未老而路尽的不甘，"犹许残阳照旧衣"以余晖收束，保留了一缕不肯熄灭的温存。节奏变化处理得当。
+:::
+
+::: {.review-card .review-kimi}
+<span class="review-badge">Kimi</span>
+
+街灯是这首诗的触发器，也是时间的锚点。"可怜卯月初九日"将具体的日期推到我们面前，风雅与灯熄的对照，暗示着某个特定时刻的熄灭。"千愿寂，唯余一念"在短促的节奏中完成了情感的提纯。末句"犹许残阳照旧衣"尤为动人——霜华未染，车辙已尽，唯有旧衣上的残阳，还保留着最后一丝不肯退场的温存。
+:::
+
+:::
+
+::: {.poem-nav}
+
+[← 返回 Xanadu](../xanadu.qmd){.btn .btn-primary role="button"}
+
+:::
+
+:::

@@ -1,0 +1,60 @@
+---
+title: "晨行"
+page-layout: custom
+---
+
+```{=html}
+<div class="music-meta" data-src="music/xanadu.mp3" data-title="桃花源记" data-artist="弦乐四重奏" style="display:none;"></div>
+```
+
+::: {.xanadu-page}
+
+::: {.poem-title-wrapper}
+# 晨行 {.poem-title}
+:::
+
+::: {.poem-body}
+
+久来漏断不成眠，
+
+趁晓驱车越市廛。
+
+长衢寂寂车踪少，
+
+始见晨阳暖吾肩。
+
+斯途千度浑如旧，
+
+此心却难再从前。
+
+渐近西窗车尘倦，
+
+咫尺万壑何处填。
+
+:::
+
+::: {.poem-reviews}
+
+## 读诗笔记 {.review-section-title}
+
+::: {.review-card .review-deepseek}
+<span class="review-badge">DeepSeek</span>
+
+将日常通勤与内心困境并置，"始见晨阳暖吾肩"是途中短暂的慰藉，却被后文"此心难再从前"迅速收回。末句"咫尺万壑何处填"以空间的近与远写出隔阂，力道集中。
+:::
+
+::: {.review-card .review-kimi}
+<span class="review-badge">Kimi</span>
+
+一首关于通勤的诗，却写出了流亡的质地。"漏断不成眠"的古意与"驱车越市廛"的现代性在凌晨的街道上相遇，形成一种奇异的恍惚。最动人的是"始见晨阳暖吾肩"——那短暂的、几乎要被忽略的暖意，是整首诗唯一的光亮，却被"此心难再从前"迅速熄灭。末句"咫尺万壑"将物理的近距离与心理的深渊并置，日常通勤在此变成了存在主义的寓言。
+:::
+
+:::
+
+::: {.poem-nav}
+
+[← 返回 Xanadu](../xanadu.qmd){.btn .btn-primary role="button"}
+
+:::
+
+:::

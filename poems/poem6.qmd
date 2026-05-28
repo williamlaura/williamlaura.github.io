@@ -1,0 +1,60 @@
+---
+title: "春风秋影"
+page-layout: custom
+---
+
+```{=html}
+<div class="music-meta" data-src="music/xanadu.mp3" data-title="桃花源记" data-artist="弦乐四重奏" style="display:none;"></div>
+```
+
+::: {.xanadu-page}
+
+::: {.poem-title-wrapper}
+# 春风秋影 {.poem-title}
+:::
+
+::: {.poem-body}
+
+曾将肺腑付瑶琴，
+
+两度弦崩此心沉。
+
+此后逢春门自掩，
+
+恐听樱落动微吟。
+
+杏花满树卿犹在，
+
+旧诺经年未可泯。
+
+戏台初见花如雪，
+
+重演春风却秋影。
+
+:::
+
+::: {.poem-reviews}
+
+## 读诗笔记 {.review-section-title}
+
+::: {.review-card .review-deepseek}
+<span class="review-badge">DeepSeek</span>
+
+琴弦崩裂的意象精准。后两句的"门自掩"与"恐听"形成层层收缩的心理防线，末句"重演春风却秋影"在季节的错位中写出时间的不可逆，是全诗最耐品的一笔。
+:::
+
+::: {.review-card .review-kimi}
+<span class="review-badge">Kimi</span>
+
+"两度弦崩"四个字，写尽了交付与碎裂的循环。诗人用"门自掩"与"恐听"构筑了一座层层收缩的心理堡垒，每一次春天的到来都意味着又一次的防御。而"重演春风却秋影"是全诗最锋利的句子——同样的舞台，同样的花如雪，时间却已经篡改了季节。这不是物是人非，而是物是、人是、季节却已偷换，一种更残忍的错位。
+:::
+
+:::
+
+::: {.poem-nav}
+
+[← 返回 Xanadu](../xanadu.qmd){.btn .btn-primary role="button"}
+
+:::
+
+:::

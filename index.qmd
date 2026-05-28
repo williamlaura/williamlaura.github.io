@@ -41,10 +41,13 @@ G. D. L.
 [Enter](home.qmd){.enter-btn}
 
 ::: {.social-links}
-<a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
-<a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
-<a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
-<a href="mailto:hello@example.com"><i class="bi bi-envelope"></i></a>
+<a href="https://m.weibo.cn/u/5915352180?wm=3333_2001&amp;from=10G5293010&amp;sourcetype=weixin&amp;s_trans=qwHEasWwv3%2BUEpT3wd4boA%3D%3D__s&amp;s_channel=4" target="_blank" title="微博">
+<svg viewBox="0 0 24 24" width="1.3rem" height="1.3rem" fill="currentColor" style="vertical-align:middle;">
+  <path d="M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.74-5.441 3.979-.394 7.413 1.404 7.671 4.018.259 2.6-2.759 5.049-6.739 5.443zM9.05 17.219c-.384.616-1.208.884-1.829.602-.612-.279-.793-.991-.406-1.593.379-.595 1.176-.861 1.793-.601.622.263.82.972.442 1.592zm1.27-1.627c-.141.237-.449.353-.689.253-.236-.09-.313-.361-.177-.586.138-.227.436-.346.672-.24.239.09.315.36.194.573zm.176-2.719c-1.893-.493-4.033.45-4.857 2.118-.836 1.704-.026 3.591 1.886 4.21 1.983.642 4.318-.341 5.132-2.179.8-1.793-.201-3.642-2.161-4.149zm7.563-1.224c-.346-.105-.579-.18-.401-.649.386-1.02.425-1.899.003-2.525-.786-1.168-2.936-1.105-5.399-.031 0 0-.772.338-.575-.274.381-1.204.324-2.212-.27-2.796-1.346-1.326-4.926.05-8.001 3.075C.879 12.316-.037 14.569.001 16.563c.076 3.879 4.973 6.238 9.841 6.238 6.379 0 10.62-3.708 10.62-6.654 0-1.78-1.501-2.788-3.403-3.499z"/>
+</svg>
+</a>
+<a href="mailto:437630394@qq.com" title="邮箱一"><i class="bi bi-envelope"></i></a>
+<a href="mailto:williamking@zohomail.cn" title="邮箱二"><i class="bi bi-envelope-fill"></i></a>
 :::
 
 :::

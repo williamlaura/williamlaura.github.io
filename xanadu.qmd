@@ -48,6 +48,11 @@ page-layout: custom
   <div class="poem-card-title">回眸见月</div>
   <div class="poem-card-meta">2026 · G.D.L.</div>
 </a>
+<a href="poems/poem2.html" class="poem-card">
+  <div class="poem-card-number">02</div>
+  <div class="poem-card-title">归家路</div>
+  <div class="poem-card-meta">2026 · G.D.L.</div>
+</a>
 ```
 :::
 

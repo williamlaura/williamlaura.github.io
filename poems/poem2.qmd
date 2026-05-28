@@ -1,0 +1,52 @@
+---
+title: "归家路"
+page-layout: custom
+---
+
+```{=html}
+<div class="music-meta" data-src="music/xanadu.mp3" data-title="桃花源记" data-artist="弦乐四重奏" style="display:none;"></div>
+```
+
+::: {.xanadu-page}
+
+::: {.poem-title-wrapper}
+# 归家路 {.poem-title}
+:::
+
+::: {.poem-body}
+
+华服几尽奥莱行，
+
+路短情长旧梦萦。
+
+阡陌俱是归家路，
+
+遗世孤魂何处停。
+
+:::
+
+::: {.poem-reviews}
+
+## 读诗笔记 {.review-section-title}
+
+::: {.review-card .review-deepseek}
+<span class="review-badge">DeepSeek</span>
+
+现代消费场景与古典意象的对撞，在这首四句短诗中形成了独特的张力。"阡陌俱是归家路"一句，以路的通达反衬人的无归，末句"遗世孤魂何处停"将迷失感推向极致，干净而沉重。
+:::
+
+::: {.review-card .review-kimi}
+<span class="review-badge">Kimi</span>
+
+此诗以"奥莱"这一现代消费地标起笔，却在"阡陌"的古典意象中急转直下，形成时空的错位与撕裂。"路短情长"四字极简，却丈量出物质与记忆之间的鸿沟——购物袋里的战利品填不满旧梦的重量。最锋利处在于"阡陌俱是归家路"：当所有的道路都名义上指向"家"时，"遗世孤魂"反而成了唯一的无主之人。诗人用四句构建了一个悖论迷宫：越繁盛的归途，越凸显漂泊的本质。
+:::
+
+:::
+
+::: {.poem-nav}
+
+[← 返回 Xanadu](../xanadu.qmd){.btn .btn-primary role="button"}
+
+:::
+
+:::

@@ -34,15 +34,19 @@ page-layout: custom
 :::
 
 ::: {.xanadu-description}
-描述
+在我了解的语言中，中文是最简洁而优美的语言。学日语愈久，愈觉绵长的语句落入中文，便只余寥寥数语，如将钱塘夜潮收入一只青瓷碗碟，心中感慨便如浪潮暗涨。联合国六种官方语言，六册文件并立，不必翻开，最薄的那一册，定是中文。
+
+中文的简洁与优美，在流传千年的诗词里抵达了极致。寥寥数十字，有四季流转，有山海相望，有相遇如惊鸿，有遗憾似细雨；短短几行诗，写尽了一幅画、一首歌、一场欢笑、一段人生。
+
+时至今日我仍常想起，那位为我这么一位数学博士，推开另一扇人生大门的语文老师——叶彪先生。他说，诗词是古人遗落的星斗，我们不必追逐古人的轨迹，借它写我们自己的人生，老瓶装新酒，千年的艺术，会因为我们的旅程，散发全新的风味。命运掷我于这天地之间，总该留下些故事让后人来看，欢迎来到一位非典型数学博士的笔下桃源。
 :::
 
 ::: {.poem-grid}
 ```{=html}
 <a href="poems/poem1.html" class="poem-card">
   <div class="poem-card-number">01</div>
-  <div class="poem-card-title">诗一</div>
-  <div class="poem-card-meta">2025 · 王朱逸男</div>
+  <div class="poem-card-title">回眸见月</div>
+  <div class="poem-card-meta">2026 · G.D.L.</div>
 </a>
 ```
 :::
@@ -62,15 +66,25 @@ page-layout: custom
     window.location.href = 'home.html';
   }
 
+  function unlock() {
+    overlay.style.display = 'none';
+  }
+
   function checkPassword() {
     if (input.value === correctPassword) {
-      overlay.style.display = 'none';
+      sessionStorage.setItem('xanadu-auth', 'verified');
+      unlock();
     } else {
       error.style.display = 'block';
       input.disabled = true;
       submit.disabled = true;
       setTimeout(goHome, 1200);
     }
+  }
+
+  if (sessionStorage.getItem('xanadu-auth') === 'verified') {
+    unlock();
+    return;
   }
 
   submit.addEventListener('click', checkPassword);

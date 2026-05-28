@@ -1,5 +1,5 @@
 ---
-title: "诗一"
+title: "回眸见月"
 page-layout: custom
 ---
 
@@ -9,20 +9,49 @@ page-layout: custom
 
 ::: {.xanadu-page}
 
-::: {.xanadu-title-wrapper}
-```{=html}
-<h1 class="xanadu-animated-title">
-  <span class="word"><span class="drop-cap" style="animation-delay: 0s;">诗</span></span>
-  <span class="word"><span class="drop-cap" style="animation-delay: 0s;">一</span></span>
-</h1>
-```
+::: {.poem-title-wrapper}
+# 回眸见月 {.poem-title}
 :::
 
-::: {.placeholder-section}
+::: {.poem-body}
 
-# 诗一
+本自无心作回眸，
 
-诗歌内容即将呈现...
+忽见明月左肩头。
+
+清辉纵难私相与，
+
+新春此夜共温柔。
+
+心魂只教蟾光许，
+
+不羡人间万户侯。
+
+明知镜花水月事，
+
+也守寒光百二秋。
+
+:::
+
+::: {.poem-reviews}
+
+## 读诗笔记 {.review-section-title}
+
+::: {.review-card .review-deepseek}
+<span class="review-badge">DeepSeek</span>
+
+全诗最特色的地方在于节奏的控制：从无心回眸的偶然，到"纵难私与"的清醒，到"新春此夜"的热烈，再到"也守寒光"的坚持，层层递进而无一跳跃。末句"百二秋"以精确的数字收束，余韵悠长。
+:::
+
+::: {.review-card .review-kimi}
+<span class="review-badge">Kimi</span>
+
+月光不是被追寻，而是悄然栖于肩头，比一切主动更具宿命感。从"共温柔"的沉醉到"不羡万户侯"的弃绝，再到"明知"而"也守"的清醒，诗人将望月主题推进到现代性困境：在确知镜花水月的前提下，仍以"百二秋"的尺度守护寒光。一位数学博士的笔下，连深情都带有定理般的精确与优美。
+:::
+
+:::
+
+::: {.poem-nav}
 
 [← 返回 Xanadu](../xanadu.qmd){.btn .btn-primary role="button"}
 

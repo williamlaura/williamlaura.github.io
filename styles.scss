@@ -18,11 +18,11 @@ $headings-font-family: 'Playfair Display', Georgia, serif;
 
 /*-- scss:rules --*/
 
-@import 'keyframes';
-@import 'navbar';
-@import 'general';
-@import 'welcome';
-@import 'home';
-@import 'xanadu';
-@import 'publications';
-@import 'music';
+@import 'animations';
+@import 'custom-nav';
+@import 'base';
+@import 'landing';
+@import 'homepage';
+@import 'poetry';
+@import 'academic';
+@import 'audio';

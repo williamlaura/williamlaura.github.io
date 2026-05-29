@@ -3,21 +3,7 @@ title: "Home"
 page-layout: custom
 ---
 
-```{=html}
-<div class="music-meta" data-src="music/melbourne_sunny.mp3" data-title="墨尔本晴" data-artist="许嵩" style="display:none;"></div>
-```
-
 ::: {.home-page}
-
-::: {.home-title-section}
-```{=html}
-<h1 class="xanadu-animated-title">
-  <span class="word"><span class="drop-cap" style="animation-delay: 0s;">W</span>illiam</span>
-  <span class="word"><span class="drop-cap" style="animation-delay: 0s;">K</span>ing's</span>
-  <span class="word"><span class="drop-cap" style="animation-delay: 0s;">H</span>omepage</span>
-</h1>
-```
-:::
 
 ::: {.home-container}
 
@@ -29,32 +15,7 @@ page-layout: custom
 
 ::: {.home-right}
 
-```{=html}
-<h1 class="typewriter-title">
-  <span class="typewriter-text"></span><span class="typewriter-cursor">|</span>
-</h1>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const text = "Hi, I'm 王朱逸男";
-  const el = document.querySelector('.typewriter-text');
-  const cursor = document.querySelector('.typewriter-cursor');
-  let i = 0;
-  const speed = 110;
-
-  function type() {
-    if (i < text.length) {
-      el.textContent += text.charAt(i);
-      i++;
-      setTimeout(type, speed);
-    } else {
-      cursor.style.animation = 'blink 1s step-end infinite';
-    }
-  }
-
-  setTimeout(type, 500);
-});
-</script>
-```
+# Hi, I'm 王朱逸男
 
 我是一名非典型的数学博士，杭州人，双鱼座，理性严谨与感性浪漫在我的体内不曾交战，反倒合伙开了一家美食工坊。
 

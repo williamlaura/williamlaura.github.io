@@ -21,10 +21,10 @@ website:
         href: home.qmd
       - text: "Publications"
         href: publications.qmd
-      - text: "Foodmap"
-        href: foodmap.qmd
       - text: "Xanadu"
         href: xanadu.qmd
+      - text: "Cuisine atlas"
+        href: foodmap.qmd
 
 format:
   html:

@@ -1,5 +1,5 @@
 ---
-title: "Foodmap"
+title: "Cuisine atlas"
 ---
 
 ```{=html}
@@ -8,7 +8,7 @@ title: "Foodmap"
 
 ::: {.placeholder-section}
 
-# Foodmap
+# Cuisine atlas
 
 Coming soon...
 

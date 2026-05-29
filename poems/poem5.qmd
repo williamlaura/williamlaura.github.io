@@ -4,7 +4,7 @@ page-layout: custom
 ---
 
 ```{=html}
-<div class="music-meta" data-src="music/ultramarine.mp3" data-title="群青" data-artist="YOASOBI" style="display:none;"></div>
+<div class="music-meta" data-src="music/YOASOBI - 群青.mp3" data-title="群青" data-artist="YOASOBI" style="display:none;"></div>
 ```
 
 ::: {.xanadu-page}

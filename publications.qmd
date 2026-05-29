@@ -4,7 +4,7 @@ page-layout: custom
 ---
 
 ```{=html}
-<div class="music-meta" data-src="music/earth_globe.mp3" data-title="地球仪" data-artist="松泽由美" style="display:none;"></div>
+<div class="music-meta" data-src="music/滨崎步-my all.mp3" data-title="MY ALL" data-artist="滨崎步" style="display:none;"></div>
 ```
 
 ::: {.xanadu-page}

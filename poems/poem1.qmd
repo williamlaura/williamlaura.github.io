@@ -4,7 +4,7 @@ page-layout: custom
 ---
 
 ```{=html}
-<div class="music-meta" data-src="music/thousand_baidu.mp3" data-title="千百度" data-artist="许嵩" style="display:none;"></div>
+<div class="music-meta" data-src="music/菅田将晖-虹.mp3" data-title="虹" data-artist="菅田将晖" style="display:none;"></div>
 ```
 
 ::: {.xanadu-page}

@@ -1,0 +1,127 @@
+---
+title: "粤府"
+page-layout: custom
+---
+
+```{=html}
+<div class="music-meta" data-src="music/rainbow.mp3" data-title="虹" data-artist="菅田将晖" style="display:none;"></div>
+```
+
+::: {.xanadu-page}
+
+::: {.poem-title-wrapper}
+# 粤府 {.poem-title}
+:::
+
+::: {.xanadu-subtitle}
+西湖春天三重奏：之三
+:::
+
+::: {.food-section}
+
+::: {.food-profile}
+| | |
+|:---|:---|
+| **菜系** | 粤菜 |
+| **地址** | 杭州市拱墅区朝晖路205号深蓝广场2楼|
+| **人均** | 150-500 元 |
+| **招牌** | 陈皮蒸龙趸、蜜汁叉烧、客家咸香鸡 |
+:::
+
+```{=html}
+<div id="amap-container" style="width:100%; height:360px; border-radius:8px; overflow:hidden;"></div>
+
+<script>
+window._AMapSecurityConfig = {
+  securityJsCode: '06dd847efab1f0773ff93792b98fbd94'
+};
+</script>
+<script src="https://webapi.amap.com/maps?v=1.4.15&key=ae39f7531a10e5d651e87b4e9c826ac5"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var map = new AMap.Map('amap-container', {
+    resizeEnable: true,
+    zoom: 16,
+    center: [120.125, 30.275]
+  });
+
+  AMap.plugin(['AMap.Geocoder'], function() {
+    var geocoder = new AMap.Geocoder({ city: '杭州市' });
+
+    geocoder.getLocation('杭州市拱墅区朝晖路205号深蓝广场2楼', function(status, result) {
+      if (status === 'complete' && result.info === 'OK') {
+        var lnglat = result.geocodes[0].location;
+        map.setCenter(lnglat);
+        new AMap.Marker({
+          position: lnglat,
+          map: map,
+          title: '粤府'
+        });
+      } else {
+        new AMap.Marker({
+          position: [120.125, 30.275],
+          map: map,
+          title: '粤府'
+        });
+      }
+    });
+  });
+});
+</script>
+
+<div class="food-map-link">
+  <a href="https://ditu.amap.com/search?query=%E7%B2%A4%E5%BA%9C%20%E6%9D%AD%E5%B7%9E&city=%E6%9D%AD%E5%B7%9E" target="_blank" class="food-map-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+    </svg>
+    在高德地图中查看
+  </a>
+</div>
+```
+
+:::
+
+::: {.food-section}
+
+::: {.xanadu-description}
+粤府是西湖春天三重奏中最为温润的一站。云吞面汤头清亮，竹升面弹牙，每一颗云吞都包着整只鲜虾；叉烧半肥半瘦，蜜汁挂得均匀，入口即化；流沙包掰开时金黄馅料缓缓流出，甜咸交融，是早茶桌上最令人期待的瞬间。这里没有啫啫煲的火爆，却有一种广式茶餐厅特有的从容与妥帖，像一首慢板诗，不疾不徐，却字字入心。
+:::
+
+:::
+
+::: {.food-section}
+
+::: {.food-gallery}
+
+```{=html}
+<div class="food-gallery-item">
+  <div class="food-gallery-placeholder">菜品图一</div>
+</div>
+<div class="food-gallery-item">
+  <div class="food-gallery-placeholder">菜品图二</div>
+</div>
+<div class="food-gallery-item">
+  <div class="food-gallery-placeholder">菜品图三</div>
+</div>
+<div class="food-gallery-item">
+  <div class="food-gallery-placeholder">环境图一</div>
+</div>
+<div class="food-gallery-item">
+  <div class="food-gallery-placeholder">环境图二</div>
+</div>
+<div class="food-gallery-item">
+  <div class="food-gallery-placeholder">环境图三</div>
+</div>
+```
+
+:::
+
+:::
+
+::: {.poem-nav}
+
+[← 返回 Cuisine Atlas](../foodmap.qmd){.btn .btn-primary role="button"}
+
+:::
+
+:::

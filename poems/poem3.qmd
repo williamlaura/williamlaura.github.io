@@ -4,7 +4,7 @@ page-layout: custom
 ---
 
 ```{=html}
-<div class="music-meta" data-src="music/xanadu.mp3" data-title="桃花源记" data-artist="弦乐四重奏" style="display:none;"></div>
+<div class="music-meta" data-src="music/rush_year.mp3" data-title="匆匆那年" data-artist="王菲" style="display:none;"></div>
 ```
 
 ::: {.xanadu-page}

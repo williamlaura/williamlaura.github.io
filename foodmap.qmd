@@ -1,15 +1,57 @@
 ---
 title: "Cuisine atlas"
+page-layout: custom
 ---
 
 ```{=html}
-<div class="music-meta" data-src="music/foodmap.mp3" data-title="餐桌上的爵士" data-artist="Smooth Trio" style="display:none;"></div>
+<div class="music-meta" data-src="music/yakimochi.mp3" data-title="ヤキモチ" data-artist="高桥优" style="display:none;"></div>
 ```
 
-::: {.placeholder-section}
+::: {.xanadu-page}
 
-# Cuisine atlas
+::: {.xanadu-title-wrapper}
+```{=html}
+<h1 class="xanadu-animated-title">
+  <span class="word"><span class="drop-cap" style="animation-delay: 0s;">C</span>uisine</span>
+  <span class="word"><span class="drop-cap" style="animation-delay: 0.1s;">A</span>tlas</span>
+</h1>
+```
 
-Coming soon...
+::: {.xanadu-subtitle}
+美食地图
+:::
+:::
+
+::: {.xanadu-description}
+《山家清供》云："食无定味，适口者珍。"我初读此句，只当是文人的自谦。后来随岁月流转才慢慢读懂，所谓美食，从来不只是舌尖上的刺激，而是记忆、情感与时节在某个瞬间的交汇。古人写食谱，不单记做法，更记那日的风雨、同坐的人、炉上的烟火，以及端上桌时心头的一动。食物是山川的馈赠，是四季的流转，是人与人之间最沉默也最忠诚的温柔。
+
+这张地图上没有什么隐世的洞天，有的只是散落在这人世间一家家再普通不过的餐厅，和一个个再寻常不过的日子。之于我，却如时光抛下的锚点，每一次落座，都是与过去的自己重逢；每一次品味，都是与当下的生活和解。如果你也相信，最动人的滋味与回忆，藏在最平凡的餐桌之上，欢迎来到我的个人美食地图。
+:::
+
+::: {.poem-grid}
+```{=html}
+<a href="food/cuisine1.html" class="poem-card">
+  <div class="poem-card-number">01</div>
+  <div class="poem-card-title">西湖春天</div>
+  <div class="poem-card-meta">西湖春天三重奏：之一</div>
+</a>
+<a href="food/cuisine2.html" class="poem-card">
+  <div class="poem-card-number">02</div>
+  <div class="poem-card-title">啫卤爷</div>
+  <div class="poem-card-meta">西湖春天三重奏：之二</div>
+</a>
+<a href="food/cuisine3.html" class="poem-card">
+  <div class="poem-card-number">03</div>
+  <div class="poem-card-title">粤府</div>
+  <div class="poem-card-meta">西湖春天三重奏：之三</div>
+</a>
+```
+:::
+
+::: {.poem-nav}
+
+[← 返回主页](home.qmd){.btn .btn-primary role="button"}
+
+:::
 
 :::

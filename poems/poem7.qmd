@@ -4,7 +4,7 @@ page-layout: custom
 ---
 
 ```{=html}
-<div class="music-meta" data-src="music/xanadu.mp3" data-title="桃花源记" data-artist="弦乐四重奏" style="display:none;"></div>
+<div class="music-meta" data-src="music/sixth_magnitude_star.mp3" data-title="六等星の夜" data-artist="Aimer" style="display:none;"></div>
 ```
 
 ::: {.xanadu-page}

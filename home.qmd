@@ -4,7 +4,7 @@ page-layout: custom
 ---
 
 ```{=html}
-<div class="music-meta" data-src="music/home.mp3" data-title="Homecoming" data-artist="Evan Call" style="display:none;"></div>
+<div class="music-meta" data-src="music/melbourne_sunny.mp3" data-title="墨尔本晴" data-artist="许嵩" style="display:none;"></div>
 ```
 
 ::: {.home-page}

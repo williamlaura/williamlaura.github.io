@@ -30,7 +30,7 @@ page-layout: custom
 
 ```{=html}
 <div class="food-map">
-  <img src="https://restapi.amap.com/v3/staticmap?location=120.125,30.275&zoom=16&size=800*360&markers=mid,,A:120.125,30.275&key=ae39f7531a10e5d651e87b4e9c826ac5" alt="粤府位置地图" style="width:100%; height:360px; border-radius:8px; object-fit:cover; display:block; background:#f0ebe3;">
+  <img src="https://restapi.amap.com/v3/staticmap?location=120.169139,30.276043&zoom=17&size=800*360&markers=mid,,A:120.169139,30.276043&key=878b1ac8a29f5d67f034ac48d017d382" alt="粤府位置地图" style="width:100%; height:360px; border-radius:8px; object-fit:cover; display:block; background:#f0ebe3;">
 </div>
 
 <div class="food-map-link">

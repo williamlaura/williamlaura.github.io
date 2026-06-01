@@ -26,3 +26,31 @@
   0%, 100% { transform: scaleY(0.4); }
   50% { transform: scaleY(1); }
 }
+
+@keyframes poemFade1 {
+  0% { opacity: 0.15; }
+  13.3% { opacity: 0.4; }
+  60% { opacity: 0.4; }
+  100% { opacity: 0.15; }
+}
+
+@keyframes poemFade2 {
+  0% { opacity: 0.15; }
+  26.7% { opacity: 0.4; }
+  60% { opacity: 0.4; }
+  100% { opacity: 0.15; }
+}
+
+@keyframes poemFade3 {
+  0% { opacity: 0.15; }
+  40% { opacity: 0.4; }
+  60% { opacity: 0.4; }
+  100% { opacity: 0.15; }
+}
+
+@keyframes poemFade4 {
+  0% { opacity: 0.15; }
+  53.3% { opacity: 0.4; }
+  60% { opacity: 0.4; }
+  100% { opacity: 0.15; }
+}

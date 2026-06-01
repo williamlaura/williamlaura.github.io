@@ -92,7 +92,7 @@
   writing-mode: vertical-rl;
   text-orientation: upright;
   font-family: 'Zhi Mang Xing', 'STXingkai', '华文行楷', 'KaiTi', 'STKaiti', '楷体', serif;
-  color: rgba(90, 90, 90, 0.4);
+  color: #5a5a5a;
   letter-spacing: 10px;
   line-height: 1.6;
   height: 420px;
@@ -100,8 +100,10 @@
   .poem-decoration-title {
     font-size: 1.35rem;
     font-weight: 600;
-    color: rgba(201, 168, 124, 0.55);
+    color: #b08d5f;
     margin-left: 1.2rem;
+    opacity: 0.15;
+    animation: poemFade1 10s ease-in-out 0s infinite;
   }
 
   .poem-decoration-body {
@@ -110,11 +112,15 @@
     span {
       display: block;
       margin-bottom: 0.6rem;
+      opacity: 0.15;
+      animation-duration: 15s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
 
-      &:nth-child(1) { margin-top: 0; }
-      &:nth-child(2) { margin-top: 25px; }
-      &:nth-child(3) { margin-top: 50px; }
-      &:nth-child(4) { margin-top: 75px; }
+      &:nth-child(1) { margin-top: 0; animation-name: poemFade1; animation-delay: 0s; }
+      &:nth-child(2) { margin-top: 25px; animation-name: poemFade2; animation-delay: 0s; }
+      &:nth-child(3) { margin-top: 50px; animation-name: poemFade3; animation-delay: 0s; }
+      &:nth-child(4) { margin-top: 75px; animation-name: poemFade4; animation-delay: 0s; }
     }
   }
 }

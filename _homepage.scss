@@ -74,13 +74,49 @@
 
 .home-right .small-photo {
   margin-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  width: 100%;
 }
 
 .small-photo-img {
-  width: 160px;
-  height: 160px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.poem-decoration {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: 'Zhi Mang Xing', 'STXingkai', '华文行楷', 'KaiTi', 'STKaiti', '楷体', serif;
+  color: rgba(90, 90, 90, 0.4);
+  letter-spacing: 10px;
+  line-height: 1.6;
+  height: 420px;
+
+  .poem-decoration-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: rgba(201, 168, 124, 0.55);
+    margin-left: 1.2rem;
+  }
+
+  .poem-decoration-body {
+    font-size: 1.25rem;
+
+    span {
+      display: block;
+      margin-bottom: 0.6rem;
+
+      &:nth-child(1) { margin-top: 0; }
+      &:nth-child(2) { margin-top: 25px; }
+      &:nth-child(3) { margin-top: 50px; }
+      &:nth-child(4) { margin-top: 75px; }
+    }
+  }
 }
 
 .home-bottom-bar {

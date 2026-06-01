@@ -34,6 +34,15 @@ page-layout: custom
 ::: {.small-photo}
 ```{=html}
 <img src="images/yuanbao.jpg" alt="Decorative photo" class="small-photo-img">
+<div class="poem-decoration">
+  <div class="poem-decoration-title">再游钱王祠</div>
+  <div class="poem-decoration-body">
+    <span>湖光山色似从前，</span>
+    <span>身侧涟漪散如烟。</span>
+    <span>顾自欢笑顾自泪，</span>
+    <span>回首已是半生缘。</span>
+  </div>
+</div>
 ```
 :::
 

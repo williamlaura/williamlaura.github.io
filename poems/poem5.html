@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8ae68d52cec5e0978fca58bfb739eb4c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ea8417219f012d8a6df6aad6aa227a69.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -589,7 +589,7 @@ ul.task-list li input[type="checkbox"] {
     <span class="music-wave"><span></span><span></span><span></span></span>
   </button>
 </div>
-<audio id="bgm" preload="auto"></audio>
+<audio id="bgm" preload="none"></audio>
 <script>
 (function() {
   var meta = document.querySelector('.music-meta');
@@ -597,12 +597,16 @@ ul.task-list li input[type="checkbox"] {
   var audio = document.getElementById('bgm');
   var toggle = document.getElementById('music-toggle');
   if (!meta || !meta.dataset.src) return;
-  audio.src = meta.dataset.src;
-  audio.load();
   player.querySelector('.music-title').textContent = meta.dataset.title || '';
   player.querySelector('.music-artist').textContent = meta.dataset.artist || '';
   player.style.display = 'flex';
   var isPlaying = false;
+
+  // 页面完全加载后再开始下载音乐
+  window.addEventListener('load', function() {
+    audio.src = meta.dataset.src;
+    audio.load();
+  });
 
   function startMusic() {
     var playPromise = audio.play();

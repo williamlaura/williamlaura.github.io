@@ -677,7 +677,7 @@ ul.task-list li input[type="checkbox"] {
     <span class="music-wave"><span></span><span></span><span></span></span>
   </button>
 </div>
-<audio id="bgm" preload="metadata"></audio>
+<audio id="bgm" preload="none"></audio>
 <script>
 (function() {
   var meta = document.querySelector('.music-meta');
@@ -685,12 +685,16 @@ ul.task-list li input[type="checkbox"] {
   var audio = document.getElementById('bgm');
   var toggle = document.getElementById('music-toggle');
   if (!meta || !meta.dataset.src) return;
-  audio.src = meta.dataset.src;
-  audio.load();
   player.querySelector('.music-title').textContent = meta.dataset.title || '';
   player.querySelector('.music-artist').textContent = meta.dataset.artist || '';
   player.style.display = 'flex';
   var isPlaying = false;
+
+  // 页面完全加载后再开始下载音乐
+  window.addEventListener('load', function() {
+    audio.src = meta.dataset.src;
+    audio.load();
+  });
 
   function startMusic() {
     var playPromise = audio.play();

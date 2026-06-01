@@ -1,6 +1,11 @@
 .home-page {
   background: #fbf5e8;
   min-height: calc(100vh - 60px);
+
+  &.with-bamboo-bg {
+    background: linear-gradient(160deg, rgba(251, 245, 232, 0.55) 0%, rgba(236, 229, 219, 0.55) 100%), $svg-bamboo-stalk;
+    background-size: auto, 90px 300px;
+  }
 }
 
 .home-title-section {
@@ -235,6 +240,26 @@
   border-radius: 4px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   border: 1px solid rgba(0,0,0,0.05);
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    width: 32px;
+    height: 32px;
+    background: $svg-ruyi-corner-solid no-repeat center;
+    background-size: contain;
+    opacity: 0.5;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    opacity: 0.75;
+  }
 }
 
 .timeline-date {
@@ -327,6 +352,24 @@
 
   &:hover::before {
     transform: scaleY(1);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    width: 40px;
+    height: 40px;
+    background: $svg-ruyi-corner-solid no-repeat center;
+    background-size: contain;
+    opacity: 0.5;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    opacity: 0.75;
   }
 }
 

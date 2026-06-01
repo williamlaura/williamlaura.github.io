@@ -7,7 +7,7 @@ page-layout: custom
 <div class="music-meta" data-src="../music/米津玄師-lemon.mp3" data-title="Lemon" data-artist="米津玄师" style="display:none;"></div>
 ```
 
-::: {.xanadu-page}
+::: {.xanadu-page .with-plum-bg}
 
 ::: {.poem-title-wrapper}
 # 西湖春天 {.poem-title}

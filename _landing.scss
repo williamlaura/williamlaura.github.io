@@ -25,7 +25,7 @@ body:has(.welcome-hero) {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  padding: 0;
+  padding: 0 0 120px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,6 +34,7 @@ body:has(.welcome-hero) {
   color: #2c2c2c;
   background: linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.45));
   background-color: #e8e4dc;
+  box-sizing: border-box;
 }
 
 .welcome-hero .subtitle-top {

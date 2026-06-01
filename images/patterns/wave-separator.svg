@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="24" viewBox="0 0 400 24">
+  <path d="M0 12 Q25 0 50 12 Q75 24 100 12 Q125 0 150 12 Q175 24 200 12 Q225 0 250 12 Q275 24 300 12 Q325 0 350 12 Q375 24 400 12" 
+        fill="none" stroke="#c9a87c" stroke-width="1" opacity="0.25"/>
+  <path d="M0 16 Q25 4 50 16 Q75 28 100 16 Q125 4 150 16 Q175 28 200 16 Q225 4 250 16 Q275 28 300 16 Q325 4 350 16 Q375 28 400 16" 
+        fill="none" stroke="#c9a87c" stroke-width="0.6" opacity="0.15"/>
+</svg>

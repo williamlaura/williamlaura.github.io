@@ -1,8 +1,44 @@
 .xanadu-page {
-  background: linear-gradient(160deg, #f7f4ef 0%, #ece5db 100%);
+  background: linear-gradient(160deg, rgba(247, 244, 239, 0.55) 0%, rgba(236, 229, 219, 0.55) 100%), $svg-cloud-pattern;
+  background-size: auto, 360px 180px;
   min-height: 100vh;
   padding-top: 15vh;
   text-align: center;
+
+  &.with-cloud-bg {
+    background: linear-gradient(160deg, rgba(247, 244, 239, 0.55) 0%, rgba(236, 229, 219, 0.55) 100%), $svg-cloud-pattern;
+    background-size: auto, 360px 180px;
+  }
+
+  &.with-wave-bg {
+    background: linear-gradient(160deg, rgba(247, 244, 239, 0.55) 0%, rgba(236, 229, 219, 0.55) 100%), $svg-wave-separator;
+    background-size: auto, 400px 24px;
+  }
+
+  &.with-scroll-bg {
+    background: linear-gradient(160deg, rgba(247, 244, 239, 0.55) 0%, rgba(236, 229, 219, 0.55) 100%), $svg-scroll-vine;
+    background-size: auto, 300px 40px;
+  }
+
+  &.with-plum-bg {
+    background: linear-gradient(160deg, rgba(247, 244, 239, 0.55) 0%, rgba(236, 229, 219, 0.55) 100%), $svg-plum-blossom;
+    background-size: auto, 240px 240px;
+  }
+
+  &.with-fret-bg {
+    background: linear-gradient(160deg, rgba(247, 244, 239, 0.55) 0%, rgba(236, 229, 219, 0.55) 100%), $svg-fret-border;
+    background-size: auto, 200px 16px;
+  }
+
+  &.with-ruyi-bg {
+    background: linear-gradient(160deg, rgba(247, 244, 239, 0.55) 0%, rgba(236, 229, 219, 0.55) 100%), $svg-ruyi-corner;
+    background-size: auto, 150px 150px;
+  }
+
+  &.with-lattice-bg {
+    background: linear-gradient(160deg, rgba(247, 244, 239, 0.55) 0%, rgba(236, 229, 219, 0.55) 100%), $svg-lattice-window;
+    background-size: auto, 250px 250px;
+  }
 }
 
 .xanadu-title-wrapper {
@@ -195,6 +231,24 @@
   &:hover::before {
     transform: scaleY(1);
   }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    width: 36px;
+    height: 36px;
+    background: $svg-ruyi-corner-solid no-repeat center;
+    background-size: contain;
+    opacity: 0.5;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    opacity: 0.75;
+  }
 }
 
 .poem-card-number {
@@ -319,6 +373,24 @@
 
   &:hover::before {
     transform: scaleY(1);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    width: 40px;
+    height: 40px;
+    background: $svg-ruyi-corner-solid no-repeat center;
+    background-size: contain;
+    opacity: 0.5;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    opacity: 0.75;
   }
 }
 

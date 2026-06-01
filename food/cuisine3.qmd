@@ -7,7 +7,7 @@ page-layout: custom
 <div class="music-meta" data-src="../music/WANDS-直到世界尽头.mp3" data-title="直到世界尽头" data-artist="WANDS" style="display:none;"></div>
 ```
 
-::: {.xanadu-page}
+::: {.xanadu-page .with-ruyi-bg}
 
 ::: {.poem-title-wrapper}
 # 粤府 {.poem-title}

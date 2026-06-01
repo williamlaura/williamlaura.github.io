@@ -17,7 +17,7 @@ page-layout: custom
 </div>
 ```
 
-::: {.xanadu-page}
+::: {.xanadu-page .with-cloud-bg}
 
 ::: {.xanadu-title-wrapper}
 ```{=html}
@@ -84,6 +84,12 @@ page-layout: custom
   <div class="poem-card-meta">2026 · G.D.L.</div>
 </a>
 ```
+:::
+
+::: {.poem-nav}
+
+[← 返回主页](home.qmd){.btn .btn-primary role="button"}
+
 :::
 
 :::

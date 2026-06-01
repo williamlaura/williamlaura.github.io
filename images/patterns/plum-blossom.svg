@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#c9a87c" stroke-width="1.2" opacity="0.25">
+    <!-- 主干 -->
+    <path d="M140 140 Q110 110 90 80 Q75 55 60 30" stroke-width="2.5"/>
+    <!-- 分枝 -->
+    <path d="M90 80 Q70 70 50 75"/>
+    <path d="M90 80 Q100 60 95 40"/>
+    <path d="M70 60 Q55 50 45 55"/>
+    <!-- 梅花1 -->
+    <g transform="translate(50,75)">
+      <circle cx="0" cy="-6" r="5"/>
+      <circle cx="5.5" cy="-2" r="5"/>
+      <circle cx="3.5" cy="4.5" r="5"/>
+      <circle cx="-3.5" cy="4.5" r="5"/>
+      <circle cx="-5.5" cy="-2" r="5"/>
+      <circle cx="0" cy="0" r="2" fill="#c9a87c" stroke="none"/>
+    </g>
+    <!-- 梅花2 -->
+    <g transform="translate(95,40)">
+      <circle cx="0" cy="-5" r="4"/>
+      <circle cx="4.5" cy="-1.5" r="4"/>
+      <circle cx="3" cy="4" r="4"/>
+      <circle cx="-3" cy="4" r="4"/>
+      <circle cx="-4.5" cy="-1.5" r="4"/>
+      <circle cx="0" cy="0" r="1.5" fill="#c9a87c" stroke="none"/>
+    </g>
+    <!-- 梅花3 -->
+    <g transform="translate(45,55)">
+      <circle cx="0" cy="-4" r="3.5"/>
+      <circle cx="3.5" cy="-1" r="3.5"/>
+      <circle cx="2.5" cy="3" r="3.5"/>
+      <circle cx="-2.5" cy="3" r="3.5"/>
+      <circle cx="-3.5" cy="-1" r="3.5"/>
+      <circle cx="0" cy="0" r="1.2" fill="#c9a87c" stroke="none"/>
+    </g>
+    <!-- 花苞 -->
+    <circle cx="60" cy="30" r="3" fill="#c9a87c" stroke="none" opacity="0.4"/>
+    <circle cx="65" cy="28" r="2" fill="#c9a87c" stroke="none" opacity="0.3"/>
+  </g>
+</svg>

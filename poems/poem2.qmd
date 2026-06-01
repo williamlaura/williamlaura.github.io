@@ -4,7 +4,7 @@ page-layout: custom
 ---
 
 ```{=html}
-<div class="music-meta" data-src="music/中孝介-各自远扬.mp3" data-title="それぞれに" data-artist="中孝介" style="display:none;"></div>
+<div class="music-meta" data-src="../music/中孝介-各自远扬.mp3" data-title="それぞれに" data-artist="中孝介" style="display:none;"></div>
 ```
 
 ::: {.xanadu-page}

@@ -4,7 +4,7 @@ page-layout: custom
 ---
 
 ```{=html}
-<div class="music-meta" data-src="music/米津玄師-lemon.mp3" data-title="Lemon" data-artist="米津玄师" style="display:none;"></div>
+<div class="music-meta" data-src="../music/米津玄師-lemon.mp3" data-title="Lemon" data-artist="米津玄师" style="display:none;"></div>
 ```
 
 ::: {.xanadu-page}
@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+```
 
 ```{=html}
 <div class="food-map-link">
